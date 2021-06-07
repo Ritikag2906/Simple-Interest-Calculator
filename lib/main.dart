@@ -25,7 +25,7 @@ class SIForm extends StatefulWidget {
 }
 
 class _SIFormState extends State<SIForm> {
-  var _currencies = ['Rupees', 'Dollars', 'Pounds'];
+  var _currencies = ['Rupees', 'Dollars', 'Pounds', 'Euros'];
 
   @override
   Widget build(BuildContext context) {
