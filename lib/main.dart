@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,7 +23,8 @@ class SIForm extends StatefulWidget {
 }
 
 class _SIFormState extends State<SIForm> {
-  var _currencies = ['Rupees', 'Dollars', 'Pounds', 'Euros'];
+  var _currencies = ['Rupees', 'Dollars', 'Pounds'];
+  final _minimumPadding = 5.0;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +32,36 @@ class _SIFormState extends State<SIForm> {
       appBar: AppBar(
         title: Text("Simple Interest Calculator"),
       ),
-      body: Container(),
+      body: Container(
+        margin: EdgeInsets.all(_minimumPadding * 2),
+        child: Column(
+          children: <Widget>[
+            getImageAsset(),
+            TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                  labelText: 'Principal',
+                  hintText: 'Enter Principal e.g. 50000'),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget getImageAsset() {
+    AssetImage assetImage = AssetImage('images/moneybank.png');
+    Image image = Image(
+      image: assetImage,
+      width: 125.0,
+      height: 125.0,
+    );
+
+    return Center(
+      child: Container(
+        child: image,
+        margin: EdgeInsets.all(_minimumPadding * 10),
+      ),
     );
   }
 }
