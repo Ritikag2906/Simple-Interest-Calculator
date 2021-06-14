@@ -30,7 +30,7 @@ class SIForm extends StatefulWidget {
 class _SIFormState extends State<SIForm> {
   var _formKey = GlobalKey<FormState>();
 
-  var _currencies = ['Rupees', 'Dollars', 'Pounds', 'Euros', 'Dinar'];
+  var _currencies = ['Rupees', 'Dollars',  'Dinar','Euros','Pounds', ];
   final _minimumPadding = 4.0;
   var _currentItemSelected = '';
 
@@ -76,7 +76,7 @@ class _SIFormState extends State<SIForm> {
                       },
                       decoration: InputDecoration(
                           labelText: 'Principal',
-                          hintText: 'Enter Principal e.g. 10000',
+                          hintText: 'Enter Principal e.g. 20000',
                           labelStyle: textStyle,
                           errorStyle: TextStyle(
                               color: Colors.cyan[100], fontSize: 15.0),
