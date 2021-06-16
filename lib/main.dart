@@ -30,7 +30,7 @@ class SIForm extends StatefulWidget {
 class _SIFormState extends State<SIForm> {
   var _formKey = GlobalKey<FormState>();
 
-  var _currencies = ['Rupees', 'Dollars',  'Dinar','Euros','Pounds', ];
+  var _currencies = ['Rupees', 'Dollars','Euros','Pounds', ];
   final _minimumPadding = 4.0;
   var _currentItemSelected = '';
 
