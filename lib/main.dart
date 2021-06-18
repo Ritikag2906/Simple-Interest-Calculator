@@ -30,7 +30,7 @@ class SIForm extends StatefulWidget {
 class _SIFormState extends State<SIForm> {
   var _formKey = GlobalKey<FormState>();
 
-  var _currencies = ['Rupees', 'Dollars','Euros','Pounds', ];
+  var _currencies = ['Rupees', 'Dollars','Euros','Pounds', 'Dinar'];
   final _minimumPadding = 4.0;
   var _currentItemSelected = '';
 
@@ -174,13 +174,11 @@ class _SIFormState extends State<SIForm> {
                         SizedBox(width: 10),
                         Container(
                           width: 175,
-                          // alignment: Alignment.centerLeft,
                           child: RaisedButton(
                             color: Theme.of(context).accentColor,
                             padding: EdgeInsets.symmetric(horizontal: 20),
                             child: Text(
                               'Reset',
-                              // style: textStyle,
                               textScaleFactor: 1.5,
                             ),
                             onPressed: () {
