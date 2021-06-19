@@ -92,7 +92,7 @@ class _SIFormState extends State<SIForm> {
                       controller: roiController,
                       validator: (String value) {
                         if (value.isEmpty) {
-                          return 'Please enter rate of interest';
+                          return 'Enter rate of interest';
                         }
                       },
                       decoration: InputDecoration(
