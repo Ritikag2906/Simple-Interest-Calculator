@@ -81,7 +81,7 @@ class _SIFormState extends State<SIForm> {
                           errorStyle: TextStyle(
                               color: Colors.cyan[100], fontSize: 15.0),
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(5.0))),
+                              borderRadius: BorderRadius.circular(6.0))),
                     )),
                 Padding(
                     padding: EdgeInsets.only(
@@ -102,7 +102,7 @@ class _SIFormState extends State<SIForm> {
                               color: Colors.cyan[100], fontSize: 15.0),
                           labelStyle: textStyle,
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(5.0))),
+                              borderRadius: BorderRadius.circular(6.0))),
                     )),
                 Padding(
                     padding: EdgeInsets.only(
@@ -126,7 +126,7 @@ class _SIFormState extends State<SIForm> {
                               errorStyle: TextStyle(
                                   color: Colors.cyan[100], fontSize: 15.0),
                               border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(5.0))),
+                                  borderRadius: BorderRadius.circular(6.0))),
                         )),
                         Container(
                           width: _minimumPadding * 10,
