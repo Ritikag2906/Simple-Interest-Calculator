@@ -209,8 +209,8 @@ class _SIFormState extends State<SIForm> {
     AssetImage assetImage = AssetImage('images/bnk.png');
     Image image = Image(
       image: assetImage,
-      width: 250.0,
-      height: 250.0,
+      width: 252.0,
+      height: 252.0,
     );
 
     return Center(
