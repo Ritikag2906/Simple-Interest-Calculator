@@ -30,7 +30,7 @@ class SIForm extends StatefulWidget {
 class _SIFormState extends State<SIForm> {
   var _formKey = GlobalKey<FormState>();
 
-  var _currencies = ['Rupees', 'Dollars','Euros','Pounds', 'Dinar'];
+  var _currencies = ['Rupees', 'Dollars','Euros','Pounds'];
   final _minimumPadding = 4.0;
   var _currentItemSelected = '';
 
@@ -51,7 +51,6 @@ class _SIFormState extends State<SIForm> {
     TextStyle textStyle = Theme.of(context).textTheme.headline6;
 
     return Scaffold(
-      // resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: Text("Simple Interest Calculator"),
       ),
